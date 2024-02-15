@@ -9,5 +9,4 @@ def get_top_n(query_top_n, start_pack):
         if vacancy['salary'] != None:
             list_salary.append(Vacancy(vacancy))
     res = nlargest(query_top_n, list_salary, key=lambda x: x.salary_vacancy)
-    for i in res:
-        print(f'\n{i}')
+    return res

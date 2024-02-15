@@ -7,5 +7,9 @@ def app_operation(start_pack):
 
     query_top_n = int(input("Введите количество вакансий для вывода в топ N по зарплате: "))
     top_n = start_pack.get_top_n(query_top_n, start_pack)
+    for i in top_n:
+        print(f'\n{i}')
+
+    filter_words = input("Введите ключевые слова для фильтрации вакансий через пробел: ").split(' ')
 
 
