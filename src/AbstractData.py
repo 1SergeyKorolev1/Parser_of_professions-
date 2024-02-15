@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class AbstractData(ABC):
     @abstractmethod
-    def get_data(self):
+    def get_data(self, vacancy_path):
         pass
 
     @abstractmethod
