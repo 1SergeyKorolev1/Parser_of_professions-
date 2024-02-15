@@ -8,5 +8,5 @@ api = ApiHh()
 data_json = DataJson()
 
 project_path = pathlib.Path(__file__).parent.parent
-vacancy_path = pathlib.Path(project_path, 'data', 'vacancy.json')
+vacancy_path = pathlib.Path(project_path, 'src', 'vacancy.json')
 
