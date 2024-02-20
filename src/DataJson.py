@@ -1,5 +1,5 @@
 import json
-from src.AbstractData import AbstractData
+from start_pack.AbstractData import AbstractData
 
 
 class DataJson(AbstractData):
@@ -12,6 +12,7 @@ class DataJson(AbstractData):
             # f.write(json.dumps(vacancy, ensure_ascii=False))
             json.dump(vacancy, f, ensure_ascii=False)
 
-
-    def delete_data(self):
-        pass
+    def delete_data(self, vacancy_path):
+        with open(vacancy_path, 'w', encoding='utf-8') as f:
+            v = ''
+            json.dump(v, f, ensure_ascii=False)

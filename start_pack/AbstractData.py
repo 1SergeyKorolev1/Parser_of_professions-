@@ -10,5 +10,5 @@ class AbstractData(ABC):
         pass
 
     @abstractmethod
-    def delete_data(self):
+    def delete_data(self, vacancy_path):
         pass

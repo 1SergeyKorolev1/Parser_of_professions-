@@ -1,3 +1,5 @@
 .idea
 env
 vacancy.json
+.coverage
+.pytest_cache

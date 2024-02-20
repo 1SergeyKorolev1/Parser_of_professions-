@@ -4,6 +4,7 @@ from src.DataJson import DataJson
 from src.ApiHh import ApiHh
 from src.Vacancy import Vacancy
 
+link_hh = 'https://api.hh.ru/vacancies'
 api = ApiHh()
 data_json = DataJson()
 vacancy_instance = Vacancy()
